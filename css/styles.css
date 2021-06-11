@@ -196,15 +196,12 @@ body {
 }
 
 /* навигация - контейнер*/
-.nav-box {
+.nav {
   display: flex;
 }
 
 /* логотип */
-.logo-link {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: var(--font-weight-bold);
   font-size: 26px;
@@ -215,19 +212,31 @@ body {
   color: var(--logo-dark-color);
 }
 
+/* логотим в навигации */
+.nav__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* логтип с инверсией цвета */
+.logo--inverse {
+  color: var(--logo-light-color);
+}
+
 /* стилизация первого слова в логотипе */
-.logo-link > span {
+.logo--first-world {
   color: var(--logo-accent-color);
 }
 
 /* список навигационных ссылок */
-.nav-list {
+.nav__list {
   display: flex;
 }
 
 /* ссылки навигации по сайту */
-.nav-item .link,
-.contact-item .link {
+.nav__link,
+.contact-list__link {
   display: flex;
   align-items: center;
   padding: 32px 0;
@@ -241,18 +250,18 @@ body {
 }
 
 /* ссылки контактов в шапке */
-.contact-item .link {
+.contact-list__link {
   color: var(--text-muted-color);
 }
 
 /* расстояние между ссылками в шапке */
-.nav-list .item:not(:last-child),
-.contact-list .item:not(:last-child) {
+.nav__item:not(:last-child),
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
 /* декорация перед контактными ссылками */
-.icon {
+.contact-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -271,41 +280,30 @@ body {
 }
 
 /* контпакты */
-.contacts {
+.footer-box__contacts {
   margin-right: 70px;
 }
 
-/* стилизация логотипа в подвале */
-.contacts .logo-link {
+/* логотип для footer */
+.footer-box__logo {
   margin-bottom: 20px;
-  margin-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  color: var(--logo-light-color);
 }
 
-/* адресный список ссылок*/
-.address-list {
+/* адресный блок*/
+.address {
   font-style: normal;
 }
 
-/* отступы между элементами списка ссылок*/
-.address-list .item:not(:last-child) {
+/* отступы между элементами списка в адресном блоке*/
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* оформление ссылок в футере */
-.footer-link {
-  color: var(--text-color-transparent);
-}
-
-.address-list .link {
-  line-height: 1.714;
-}
-
-/* цвет строки-ссылки с почтовым адресом */
-.address-link {
+/* оформление ссылок в адресном блоке */
+.address__link {
   color: inherit;
+  line-height: 1.714;
+  color: var(--text-color-transparent);
 }
 
 /* 
@@ -316,17 +314,17 @@ body {
 */
 .link:hover,
 .link:focus,
-.link.active {
+.nav__link--active {
   color: var(--accent-color);
 }
 
-.link.active {
+.nav__link--active {
   display: flex;
   position: relative;
   flex-direction: column;
 }
 
-.link.active::after {
+.nav__link--active::after {
   content: "";
   position: absolute;
   width: 100%;
