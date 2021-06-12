@@ -21,8 +21,8 @@
       <div class="container header-container">
         <!-- Навигация по сайту -->
         <nav class="nav">
-          <a class="link logo logo--header" href="./"
-            ><span class="logo--first-word">Web</span>Studio</a
+          <a class="link logo logo__header" href="./"
+            ><span class="logo__first-word">Web</span>Studio</a
           >
           <ul class="list nav__list">
             <li class="nav__item">
@@ -291,8 +291,8 @@
     <footer class="section section-footer">
       <div class="container footer-box">
         <div class="footer-box__contacts" id="contacts">
-          <a href="./" class="link logo logo--footer"
-            ><span class="logo--first-word">Web</span>Studio</a
+          <a href="./" class="link logo logo__footer"
+            ><span class="logo__first-word">Web</span>Studio</a
           >
           <!-- список контактов (подвал) -->
           <address class="address">
@@ -322,7 +322,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="social-box">
           <p class="text text-appeal">Присоединяйтесь</p>
           <ul class="list social-list">
             <li class="social-list__item">
@@ -355,28 +355,23 @@
           </ul>
         </div>
 
-        <div class="subscribe-box">
-          <form class="frm-subscribe">
-            <label class="subscribe-lbl" for="email-subscribe"
-              >Подпишитесь на рассылку</label
-            >
-            <div class="frm-subscribe-field">
-              <input
-                class="email-subscribe"
-                type="email"
-                name="email"
-                id="email-subscribe"
-                placeholder="E-mail"
-              />
-              <button class="btn btn__accent btn__subscribe" type="submit">
-                Подписаться
-                <svg class="icon-send" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
+        <form class="form-subscribe">
+          <label class="form-subscribe__label" for="email-subscribe"
+            >Подпишитесь на рассылку
+            <input
+              class="form-subscribe__input"
+              type="email"
+              name="email"
+              id="email-subscribe"
+              placeholder="E-mail"
+          /></label>
+          <button class="btn btn__accent btn__subscribe" type="submit">
+            Подписаться
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>

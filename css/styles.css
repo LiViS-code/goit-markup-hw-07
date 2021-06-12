@@ -212,14 +212,14 @@ body {
 }
 
 /* логотим в навигации */
-.logo--header {
+.logo__header {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
 /* стилизация первого слова в логотипе */
-.logo--first-word {
+.logo__first-word {
   color: var(--logo-accent-color);
 }
 
@@ -279,7 +279,7 @@ body {
 }
 
 /* логотип для footer */
-.logo--footer {
+.logo__footer {
   margin-bottom: 20px;
   color: var(--logo-light-color);
 }
