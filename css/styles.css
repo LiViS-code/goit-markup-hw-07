@@ -87,7 +87,6 @@ body {
 }
 
 /*кнопка - активная, при наведении курсора, фокусе */
-.btn.active,
 .btn:hover,
 .btn:focus {
   cursor: pointer;
@@ -104,7 +103,7 @@ body {
 }
 
 /* заголовок секции */
-.title-section {
+.section__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: var(--font-weight-bold);
@@ -113,8 +112,7 @@ body {
 }
 
 /* скрытые элементы сайта */
-.visually-hidden,
-.hidden-title {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -142,19 +140,20 @@ body {
 }
 
 /* компенсация интервалов в сетках списков */
-.card-list {
+.cards-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* интервал между элементами в сетке */
-.card-list > .item:not(:last-child) {
+.cards-list__item:not(:last-child) {
   margin-right: var(--gap);
 }
 
 /* убрал нижний зазор во всех сприсках с картинками */
-.card-thumb > img {
+.card-thumb__img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -184,14 +183,14 @@ body {
 }
 
 /* header */
-.header-page {
+.header-section {
   padding-top: 0;
   padding-bottom: 0;
   border-bottom: 1px solid #ececec;
 }
 
 /* контейнер для содержимого шапки */
-.header-box {
+.header-container {
   display: flex;
 }
 
@@ -213,19 +212,14 @@ body {
 }
 
 /* логотим в навигации */
-.nav__logo {
+.logo--header {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-/* логтип с инверсией цвета */
-.logo--inverse {
-  color: var(--logo-light-color);
-}
-
 /* стилизация первого слова в логотипе */
-.logo--first-world {
+.logo--first-word {
   color: var(--logo-accent-color);
 }
 
@@ -267,7 +261,7 @@ body {
 }
 
 /* footer */
-.footer-page {
+.section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-secondary-color);
@@ -285,8 +279,9 @@ body {
 }
 
 /* логотип для footer */
-.footer-box__logo {
+.logo--footer {
   margin-bottom: 20px;
+  color: var(--logo-light-color);
 }
 
 /* адресный блок*/
@@ -330,7 +325,7 @@ body {
   width: 100%;
   height: 4px;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   border-radius: 2px;
   background-color: var(--accent-color);
 }
@@ -408,7 +403,7 @@ body {
 }
 
 /* кнопка оптавки e-mail */
-.btn-subscribe {
+.btn__subscribe {
   padding: 10px 28px 10px 29px;
   display: flex;
   align-items: center;
@@ -430,7 +425,7 @@ form {
 
 /* index.html */
 /* герой */
-.hero-section {
+.section__hero {
   max-width: var(--max-width-site);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -463,12 +458,12 @@ form {
 }
 
 /* кнопка перехода к заказу в секции hero */
-.btn-order {
+.btn__order {
   padding: 10px 32px;
 }
 
-.btn-order,
-.btn-subscribe {
+.btn__order,
+.btn__subscribe {
   font-weight: var(--font-weight-bold);
   font-size: 16px;
   line-height: 1.875;
@@ -477,22 +472,17 @@ form {
     outline-color var(--transition-duration) var(--timing-function);
 }
 
-.active.btn-order:hover,
-.active.btn-order:focus,
-.btn-order-submit:hover,
-.btn-order-submit:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.btn--accent {
+  color: var(--text-light-color);
+  background-color: var(--accent-color);
 }
 
-.btn-order:hover,
-.btn-order:focus,
-.btn-subscribe:hover,
-.btn-subscribe:focus,
-.btn-order-submit:hover,
-.btn-order-submit:focus {
+.btn--accent:hover,
+.btn--accent:focus {
   outline: auto;
   outline-color: var(--accent-color);
   background: var(--accent-color-btn-order);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* backdrop для модального окна*/
@@ -688,12 +678,12 @@ form {
 }
 
 /* сетка особенностей */
-.features-list > .item {
+.cards-list__item--grid-features {
   flex-basis: calc((100% - 3 * var(--gap)) / 4);
 }
 
 /* декорация над элементом особенностей */
-.features-icon-box {
+.cards-list__icon-features {
   width: 100%;
   height: 120px;
   display: flex;
@@ -705,7 +695,7 @@ form {
 }
 
 /* заголовки в списках особенностей */
-.features-list .title {
+.cards-list__title-features {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 14px;
@@ -714,21 +704,15 @@ form {
 }
 
 /* параграфы в списках особенностей */
-.features-list .text {
+.cards-list__text-features {
   margin-bottom: 0;
   line-height: 1.714;
   color: var(--text-muted-color);
 }
 
 /* секция Чем мы занимаемся */
-.doing-box {
+sectoin__doing {
   padding-top: 0;
-}
-
-/* фото примеров */
-.doing-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* карточка примера работ */
@@ -752,7 +736,7 @@ form {
 }
 
 /* Секция наша команда */
-.team-box {
+.section__team {
   background-color: var(--backgrount-third-color);
 }
 
@@ -765,12 +749,12 @@ form {
 }
 
 /* описание сотрудника команды*/
-.team-card-content {
+.team-card__content {
   padding: 30px;
 }
 
 /* фамилия, имя сотрудника */
-.team-card .title {
+.team-card__name {
   margin-bottom: 10px;
   text-align: center;
   font-weight: var(--font-weight-medium);
@@ -779,7 +763,7 @@ form {
 }
 
 /* должность сотрудинка */
-.team-card .text {
+.team-card__position {
   margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
@@ -805,12 +789,12 @@ form {
 
 /* секция постоянные клиенты */
 
-/* сетка для клиентов */
-.client-item {
+/* сетка списка клиентов */
+.cards-list__item--grid-clients {
   flex-basis: calc((100% - 6 * var(--gap)) / 6);
 }
 
-/* ссылка на клиента */
+/* ссылка на ресурс клиента */
 .client-link {
   width: 170px;
   height: 92px;
@@ -822,13 +806,13 @@ form {
   border: 1px solid var(--icon-color);
 }
 
-/* иконка логотипа клиента */
-.icon-client {
+/* иконка с логотипом клиента */
+.client-link__icon {
   max-width: 100%;
   fill: currentColor;
 }
 
-/* изменения при наведении и фокусе рамки */
+/* изменения при наведении и фокусе на ссылку клиента*/
 .client-link:hover,
 .client-link:focus {
   transition-property: border, color;
