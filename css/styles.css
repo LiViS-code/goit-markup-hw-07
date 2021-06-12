@@ -472,209 +472,17 @@ form {
     outline-color var(--transition-duration) var(--timing-function);
 }
 
-.btn--accent {
+.btn__accent {
   color: var(--text-light-color);
   background-color: var(--accent-color);
 }
 
-.btn--accent:hover,
-.btn--accent:focus {
+.btn__accent:hover,
+.btn__accent:focus {
   outline: auto;
   outline-color: var(--accent-color);
   background: var(--accent-color-btn-order);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-/* backdrop для модального окна*/
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity var(--transition-duration) var(--timing-function);
-  background-color: var(--background-backdrop);
-}
-
-/* модальное окно */
-.modal {
-  position: absolute;
-  width: 528px;
-  top: 50%;
-  left: 50%;
-  padding: 40px;
-  transform: translate3d(-50%, -50%, 0) scale(1) rotate3d(0, 0, 0, 360deg);
-  transition: transform var(--transition-duration) var(--timing-function);
-  color: var(--text-color);
-  background-color: var(--background-prime-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: var(--border-radius);
-}
-
-/* скрыть модальное окно */
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* скрыть модальное окно */
-.backdrop.is-hidden .modal {
-  transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
-}
-
-/* кнопка закрыть модальное окно */
-.btn-modal-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border-radius: 50%;
-  color: black;
-  transition: color var(--transition-duration) var(--timing-function);
-  background-color: var(--background-prime-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.btn-modal-close:hover,
-.btn-modal-close:focus {
-  cursor: pointer;
-  color: var(--accent-color);
-}
-
-.icon-close {
-  position: absolute;
-  transform: translate3d(-50%, -50%, 0);
-  fill: currentColor;
-}
-
-/* текст-призыв в форме заказа */
-.text-modal {
-  margin-bottom: 12px;
-  text-align: center;
-  font-weight: var(--font-weight-bold);
-  font-size: 20px;
-  line-height: 1.15;
-}
-
-/* форма заказа */
-.frm-order {
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-}
-
-/* метка поля ввода */
-.field-lbl {
-  position: relative;
-  margin-bottom: 10px;
-  display: block;
-}
-
-/* поле ввода в форме заказа */
-.order-input {
-  width: 100%;
-  padding: 12px 0 12px 42px;
-  margin-top: 4px;
-  font-size: 16px;
-  transition: border var(--transition-duration) var(--timing-function);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: var(--border-radius);
-}
-
-/* курсор над полями ввода */
-
-.order-input:hover,
-.order-input:focus {
-  cursor: pointer;
-  border: 1px solid var(--accent-color);
-}
-
-/* общий класс для иконок полей ввода формы */
-.lbl-icon {
-  position: absolute;
-  bottom: 4px;
-  left: 15px;
-  transform: translateY(-50%);
-  fill: currentColor;
-  transition: fill var(--transition-duration) var(--timing-function);
-}
-
-/* покраска иконок при фокусе и наведении */
-.order-input:hover + .lbl-icon,
-.order-input:focus + .lbl-icon {
-  fill: var(--accent-color);
-}
-
-.note-field {
-  margin-bottom: 20px;
-}
-
-/* примечание в форме заказа */
-.order-note {
-  padding: 12px 16px;
-  resize: none;
-}
-
-.order-note::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-/* оформление метки чекбокса */
-.lbl-chek {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-
-/* прячем дефолтный чекбокс */
-.order-chek {
-  appearance: none;
-}
-
-/* кастомный чекбокс */
-.icon-check {
-  margin-right: 8.38px;
-  border-radius: 2px;
-  fill: var(--background-prime-color);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background-origin: border-box;
-  transition: background-color var(--transition-duration) var(--timing-function),
-    border var(--transition-duration) var(--timing-function);
-}
-
-/* фокус и ховер на чекбокс */
-.order-chek:hover + .icon-check,
-.order-chek:focus + .icon-check {
-  border-color: var(--accent-color);
-}
-
-/* состояние checked  */
-.order-chek:checked + .icon-check {
-  background-color: var(--accent-color);
-}
-
-/* ссылка на договор */
-.link-contract {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-
-/* кнопка оптавки формы заказа */
-.btn-order-submit {
-  display: block;
-  margin: 30px auto 0;
-  padding: 10px 55px 10px 56px;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
 }
 
 /* сетка особенностей */
@@ -918,4 +726,201 @@ sectoin__doing {
   font-size: 16px;
   line-height: 1.875;
   color: var(--text-muted-color);
+}
+
+/* backdrop для модального окна*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity var(--transition-duration) var(--timing-function);
+  background-color: var(--background-backdrop);
+}
+
+/* модальное окно */
+.modal {
+  position: absolute;
+  width: 528px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate3d(-50%, -50%, 0) scale(1) rotate3d(0, 0, 0, 360deg);
+  transition: transform var(--transition-duration) var(--timing-function);
+  color: var(--text-color);
+  background-color: var(--background-prime-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+}
+
+/* скрыть модальное окно */
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* скрыть модальное окно */
+.backdrop.is-hidden .modal {
+  transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
+}
+
+/* кнопка закрыть модальное окно */
+.btn-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  color: black;
+  transition: color var(--transition-duration) var(--timing-function);
+  background-color: var(--background-prime-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.icon-close {
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  fill: currentColor;
+}
+
+/* текст-призыв в форме заказа */
+.text-modal {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+/* форма заказа */
+.frm-order {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+/* метка поля ввода */
+.frm-order__label {
+  position: relative;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* поле ввода в форме заказа */
+.frm-order__input {
+  width: 100%;
+  padding: 12px 0 12px 42px;
+  margin-top: 4px;
+  font-size: 16px;
+  transition: border var(--transition-duration) var(--timing-function);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--border-radius);
+}
+
+/* курсор над полями ввода */
+
+.frm-order__input:hover,
+.frm-order__input:focus {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+}
+
+/* общий класс для иконок полей ввода формы */
+.frm-order__icon {
+  position: absolute;
+  bottom: 4px;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+
+/* покраска иконок при фокусе и наведении */
+.frm-order__input:hover + .frm-order__icon,
+.frm-order__input:focus + .frm-order__icon {
+  fill: var(--accent-color);
+}
+
+.frm-order__label-note {
+  margin-bottom: 20px;
+}
+
+/* примечание в форме заказа */
+.frm-order__input-note {
+  padding: 12px 16px;
+  resize: none;
+}
+
+.frm-order__input-note::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* оформление метки чекбокса */
+.frm-order__label-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+/* прячем дефолтный чекбокс */
+.frm-order__input-check {
+  appearance: none;
+}
+
+/* кастомный чекбокс */
+.icon-check {
+  margin-right: 8.38px;
+  border-radius: 2px;
+  fill: var(--background-prime-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-origin: border-box;
+  transition: background-color var(--transition-duration) var(--timing-function),
+    border var(--transition-duration) var(--timing-function);
+}
+
+.frm-order__label-check:hover,
+.frm-order__label-check:focus {
+  cursor: pointer;
+}
+
+/* фокус и ховер на чекбокс */
+.frm-order__input-check:hover + .icon-check,
+.frm-order__input-check:focus + .icon-check {
+  border-color: var(--accent-color);
+}
+
+/* состояние checked  */
+.frm-order__input-check:checked + .icon-check {
+  background-color: var(--accent-color);
+}
+
+/* ссылка на договор */
+.link__contract {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+/* кнопка оптавки формы заказа */
+.btn__order-submit {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 55px 10px 56px;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
