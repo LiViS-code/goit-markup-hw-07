@@ -64,31 +64,36 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="title hidden-title">Портфолио</h1>
+          <h1 class="title visually-hidden">Портфолио</h1>
           <ul class="list filters-list">
-            <li class="btn-item">
-              <button class="btn filters-btn active" type="button" autofocus>
+            <li class="filters-list__item">
+              <button
+                class="btn btn__filters btn__accent"
+                type="button"
+                autofocus
+              >
                 Все
               </button>
             </li>
-            <li class="btn-item">
-              <button class="btn filters-btn" type="button">Веб-сайты</button>
+            <li class="filters-list__item">
+              <button class="btn btn__filters" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-item">
-              <button class="btn filters-btn" type="button">Приложения</button>
+            <li class="filters-list__item">
+              <button class="btn btn__filters" type="button">Приложения</button>
             </li>
-            <li class="btn-item">
-              <button class="btn filters-btn" type="button">Дизайн</button>
+            <li class="filters-list__item">
+              <button class="btn btn__filters" type="button">Дизайн</button>
             </li>
-            <li class="btn-item">
-              <button class="btn filters-btn" type="button">Маркетинг</button>
+            <li class="filters-list__item">
+              <button class="btn btn__filters" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list card-list project-list">
-            <li class="item project-card">
+          <ul class="list cards-list cards-list__project">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
                   <img
+                    class="card-thumb__img"
                     src="./images/proj1.jpg"
                     alt="дизайн сайта"
                     width="370"
@@ -99,16 +104,17 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Технокряк</h2>
-                  <p class="text text-project">Веб-сайт</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Технокряк</h2>
+                  <p class="text project-content__description">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
                   <img
+                    class="card-thumb__img"
                     src="./images/proj2.jpg"
                     alt="дизайн постера"
                     width="370"
@@ -119,16 +125,19 @@
                     minima delectus assumenda. Porro, non?
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                  <p class="text text-project">Дизайн</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="text project-content__description">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
                   <img
+                    class="card-thumb__img"
                     src="./images/proj3.jpg"
                     alt="Приложение для ресторана"
                     width="370"
@@ -139,32 +148,38 @@
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Ресторан Seafood</h2>
-                  <p class="text text-project">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Ресторан Seafood</h2>
+                  <p class="text project-content__description">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
-                  <img src="./images/proj4.jpg" alt="наушники" width="370" />
+                  <img
+                    class="card-thumb__img"
+                    src="./images/proj4.jpg"
+                    alt="наушники"
+                    width="370"
+                  />
                   <p class="text overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
                     quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Проект Prime</h2>
-                  <p class="text text-project">Маркетинг</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Проект Prime</h2>
+                  <p class="text project-content__description">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
                   <img
+                    class="card-thumb__img"
                     src="./images/proj5.jpg"
                     alt="две картонные коробки"
                     width="370"
@@ -175,32 +190,40 @@
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Проект Boxes</h2>
-                  <p class="text text-project">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Проект Boxes</h2>
+                  <p class="text project-content__description">Приложение</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
-                  <img src="./images/proj6.jpg" alt="монитор" width="370" />
+                  <img
+                    class="card-thumb__img"
+                    src="./images/proj6.jpg"
+                    alt="монитор"
+                    width="370"
+                  />
                   <p class="text overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
                     quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Inspiration has no Borders</h2>
-                  <p class="text text-project">Веб-сайт</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="text project-content__description">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
                   <img
+                    class="card-thumb__img"
                     src="./images/proj7.jpg"
                     alt="открытый журнал"
                     width="370"
@@ -211,41 +234,53 @@
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Издание Limited Edition</h2>
-                  <p class="text text-project">Дизайн</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="text project-content__description">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
-                  <img src="./images/proj8.jpg" alt="бирка" width="370" />
+                  <img
+                    class="card-thumb__img"
+                    src="./images/proj8.jpg"
+                    alt="бирка"
+                    width="370"
+                  />
                   <p class="text overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
                     quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Проект LAB</h2>
-                  <p class="text text-project">Маркетинг</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Проект LAB</h2>
+                  <p class="text project-content__description">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="item project-card">
+            <li class="cards-list__item-project">
               <a class="link project-link" href="#"
                 ><div class="card-thumb">
-                  <img src="./images/proj9.jpg" alt="ноутбук" width="370" />
+                  <img
+                    class="card-thumb__img"
+                    src="./images/proj9.jpg"
+                    alt="ноутбук"
+                    width="370"
+                  />
                   <p class="text overlay-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
                     quibusdam? Magnam cum quis ab voluptas, perferendis dolor?
                     Repellendus, laboriosam et.
                   </p>
                 </div>
-                <div class="project-card-content">
-                  <h2 class="title">Growing Business</h2>
-                  <p class="text text-project">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title project-content__name">Growing Business</h2>
+                  <p class="text project-content__description">Приложение</p>
                 </div></a
               >
             </li>
@@ -289,31 +324,31 @@
 
         <div>
           <p class="text text-appeal">Присоединяйтесь</p>
-          <ul class="list footer-social-list">
-            <li class="social-list-item">
-              <a class="link social-link footer-social-link" href="#"
-                ><svg class="footer-social-icon" width="20" height="20">
+          <ul class="list social-list">
+            <li class="social-list__item">
+              <a class="link social-link social-link__footer" href="#"
+                ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram" /></svg
               ></a>
             </li>
 
-            <li class="social-list-item">
-              <a class="link social-link footer-social-link" href="#"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a class="link social-link social-link__footer" href="#"
+                ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter" /></svg
               ></a>
             </li>
 
-            <li class="social-list-item">
-              <a class="link social-link footer-social-link" href="#"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a class="link social-link social-link__footer" href="#"
+                ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook" /></svg
               ></a>
             </li>
 
-            <li class="social-list-item">
-              <a class="link social-link footer-social-link" href="#"
-                ><svg class="footer-social-icon" width="20" height="20">
+            <li class="social-list__item">
+              <a class="link social-link social-link__footer" href="#"
+                ><svg class="social-link__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin" /></svg
               ></a>
             </li>
@@ -333,7 +368,7 @@
                 id="email-subscribe"
                 placeholder="E-mail"
               />
-              <button class="btn active btn-subscribe" type="submit">
+              <button class="btn btn__accent btn__subscribe" type="submit">
                 Подписаться
                 <svg class="icon-send" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>

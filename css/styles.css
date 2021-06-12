@@ -336,6 +336,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.social-box {
+  margin-right: 93px;
+}
+
 /* заголовок списка соц. сетей */
 .text-appeal {
   margin-bottom: 20px;
@@ -345,53 +349,39 @@ body {
   text-transform: uppercase;
 }
 
-/* список социальных ссылок в footer */
-.footer-social-list {
-  display: flex;
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* соц.ссылка в футере */
-.footer-social-link {
-  color: inherit;
+.social-link__footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* иконка соц.сети в футере */
-.footer-social-icon {
+.social-list__footer-icon {
   fill: currentColor;
 }
 
-/* блок для формы подписки */
-.subscribe-box {
+/* форма подписки */
+.form-subscribe {
   display: flex;
-  margin-left: auto;
-}
-
-.frm-subscribe-field {
-  display: flex;
+  align-items: flex-end;
 }
 
 /* призыв подписаться */
-.subscribe-lbl {
-  display: block;
-  margin-bottom: 20px;
+.form-subscribe__label {
+  max-width: 358px;
+  margin-right: 12px;
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
 
-.subscribe-lbl:hover,
+.form-subscribe__label:hover,
 .email-subscribe:hover {
   cursor: pointer;
 }
 
 /* поле для ввода e-mail */
-.email-subscribe {
-  width: 358px;
-  margin-right: 12px;
+.form-subscribe__input {
+  width: 100%;
+  margin-top: 20px;
   padding: 15px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -405,7 +395,7 @@ body {
 /* кнопка оптавки e-mail */
 .btn__subscribe {
   padding: 10px 28px 10px 29px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   box-shadow: none;
 }
@@ -579,19 +569,24 @@ sectoin__doing {
   color: var(--text-muted-color);
 }
 
-/* список ссылок на соц.сети сотрудника */
-.team-social-list {
+/* список ссылок на соц.сети */
+.social-list {
   display: flex;
   justify-content: space-between;
 }
 
+/* интервал между ссылками на соц.сети */
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* ссылка на социальную сеть сотрудника */
-.team-social-link {
+.social-link__team {
   color: var(--icon-color);
 }
 
 /* иконка социальной сети сотрудника*/
-.social-icon-team {
+.social-link__icon {
   fill: currentColor;
 }
 
@@ -636,7 +631,7 @@ sectoin__doing {
 }
 
 /* кнопка фильтра */
-.filters-btn {
+.btn__filters {
   padding: 6px 22px;
   font-size: 16px;
   font-weight: var(--font-weight-medium);
@@ -644,19 +639,19 @@ sectoin__doing {
 }
 
 /* интервалы между кнопками фильтра */
-.btn-item:not(:last-child) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
 /* список проектов*/
-.project-list {
+.cards-list__project {
   margin-right: calc(-1 * var(--gap));
   margin-bottom: calc(-1 * var(--gap));
   background-color: var(--background-prime-color);
 }
 
 /* сетка с карточками проектов */
-.project-card {
+.cards-list__item-project {
   margin-right: var(--gap);
   margin-bottom: var(--gap);
   flex-basis: calc((100% - 3 * var(--gap)) / 3);
@@ -670,15 +665,15 @@ sectoin__doing {
 }
 
 /* тень карточки проекта при активации */
-.project-card .project-link:hover,
-.project-card .project-link:focus {
+.project-link:hover,
+.project-link:focus {
   color: inherit;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* якорь для оверлея проекта*/
-.project-link .card-thumb {
+.card-thumb {
   position: relative;
   overflow: hidden;
 }
@@ -705,7 +700,7 @@ sectoin__doing {
 }
 
 /* блок с описание проекта */
-.project-card-content {
+.project-content {
   padding: 20px 24px;
   border-left: var(--project-card-border);
   border-right: var(--project-card-border);
@@ -713,7 +708,7 @@ sectoin__doing {
 }
 
 /* заголовок проекта */
-.project-card .title {
+.project-content__name {
   margin-bottom: 4px;
   font-weight: var(--font-weight-bold);
   font-size: 18px;
@@ -722,7 +717,7 @@ sectoin__doing {
 }
 
 /* описание проекта */
-.text-project {
+.project-content__description {
   font-size: 16px;
   line-height: 1.875;
   color: var(--text-muted-color);
@@ -769,7 +764,7 @@ sectoin__doing {
 }
 
 /* кнопка закрыть модальное окно */
-.btn-modal-close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -783,20 +778,20 @@ sectoin__doing {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.btn-modal-close:hover,
-.btn-modal-close:focus {
+.modal__btn-close:hover,
+.modal__btn-close:focus {
   cursor: pointer;
   color: var(--accent-color);
 }
 
-.icon-close {
+.modal__icon-close {
   position: absolute;
   transform: translate3d(-50%, -50%, 0);
   fill: currentColor;
 }
 
 /* текст-призыв в форме заказа */
-.text-modal {
+.modal__appeal {
   margin-bottom: 12px;
   text-align: center;
   font-weight: var(--font-weight-bold);
@@ -805,21 +800,21 @@ sectoin__doing {
 }
 
 /* форма заказа */
-.frm-order {
+.form-order {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
 }
 
 /* метка поля ввода */
-.frm-order__label {
+.form-order__label {
   position: relative;
   margin-bottom: 10px;
   display: block;
 }
 
 /* поле ввода в форме заказа */
-.frm-order__input {
+.form-order__input {
   width: 100%;
   padding: 12px 0 12px 42px;
   margin-top: 4px;
@@ -831,14 +826,14 @@ sectoin__doing {
 
 /* курсор над полями ввода */
 
-.frm-order__input:hover,
-.frm-order__input:focus {
+.form-order__input:hover,
+.form-order__input:focus {
   cursor: pointer;
   border: 1px solid var(--accent-color);
 }
 
 /* общий класс для иконок полей ввода формы */
-.frm-order__icon {
+.form-order__icon {
   position: absolute;
   bottom: 4px;
   left: 15px;
@@ -848,27 +843,27 @@ sectoin__doing {
 }
 
 /* покраска иконок при фокусе и наведении */
-.frm-order__input:hover + .frm-order__icon,
-.frm-order__input:focus + .frm-order__icon {
+.form-order__input:hover + .form-order__icon,
+.form-order__input:focus + .form-order__icon {
   fill: var(--accent-color);
 }
 
-.frm-order__label-note {
+.form-order__label-note {
   margin-bottom: 20px;
 }
 
 /* примечание в форме заказа */
-.frm-order__input-note {
+.form-order__input-note {
   padding: 12px 16px;
   resize: none;
 }
 
-.frm-order__input-note::placeholder {
+.form-order__input-note::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
 /* оформление метки чекбокса */
-.frm-order__label-check {
+.form-order__label-check {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -878,7 +873,7 @@ sectoin__doing {
 }
 
 /* прячем дефолтный чекбокс */
-.frm-order__input-check {
+.form-order__input-check {
   appearance: none;
 }
 
@@ -893,19 +888,19 @@ sectoin__doing {
     border var(--transition-duration) var(--timing-function);
 }
 
-.frm-order__label-check:hover,
-.frm-order__label-check:focus {
+.form-order__label-check:hover,
+.form-order__label-check:focus {
   cursor: pointer;
 }
 
 /* фокус и ховер на чекбокс */
-.frm-order__input-check:hover + .icon-check,
-.frm-order__input-check:focus + .icon-check {
+.form-order__input-check:hover + .icon-check,
+.form-order__input-check:focus + .icon-check {
   border-color: var(--accent-color);
 }
 
 /* состояние checked  */
-.frm-order__input-check:checked + .icon-check {
+.form-order__input-check:checked + .icon-check {
   background-color: var(--accent-color);
 }
 
