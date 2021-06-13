@@ -296,9 +296,12 @@ body {
 
 /* оформление ссылок в адресном блоке */
 .address__link {
-  color: inherit;
   line-height: 1.714;
   color: var(--text-color-transparent);
+}
+
+.address__link--light {
+  color: var(--text-light-color);
 }
 
 /* 
