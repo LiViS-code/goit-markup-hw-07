@@ -832,6 +832,14 @@ sectoin__doing {
   border-radius: var(--border-radius);
 }
 
+/* убираем краску с полей ввода от браузера */
+.form-order__input:-webkit-autofill,
+.form-order__input:hover,
+.form-order__input:focus,
+.form-order__input:active {
+  box-shadow: 0 0 0 200px #ffffff inset;
+}
+
 /* курсор над полями ввода */
 
 .form-order__input:hover,
@@ -863,6 +871,7 @@ sectoin__doing {
 /* примечание в форме заказа */
 .form-order__input-note {
   padding: 12px 16px;
+  height: 120px;
   resize: none;
 }
 
