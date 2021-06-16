@@ -1,4 +1,4 @@
-/* ссылки на страничках */
+// ссылки на страничках
 .link {
   display: inline-block;
   text-decoration: none;
@@ -7,13 +7,13 @@
   transition: color $transition-duration $timing-function;
 }
 
-/* заголовки */
+// заголовки
 .title {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* заголовок секции */
+// заголовок секции
 .section__title {
   margin-bottom: 50px;
   text-align: center;
@@ -22,19 +22,19 @@
   line-height: 1.17;
 }
 
-/* общий стиль для параграфов */
+// общий стиль для параграфов
 .text {
   margin: 0;
 }
 
-/* общий стиль списков в шапке и секциях сайта */
+// общий стиль списков в шапке и секциях сайта
 .list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* список карточек */
+// список карточек
 .cards-list {
   display: flex;
   flex-wrap: wrap;

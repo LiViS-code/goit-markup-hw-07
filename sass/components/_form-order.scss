@@ -97,11 +97,10 @@
   .form-order__input-check:hover + &,
   .form-order__input-check:focus + & {
     border-color: $accent-color;
-
-    // состояние checked
-    .form-order__input-check:checked + & {
-      background-color: $accent-color;
-    }
+  }
+  // состояние checked
+  .form-order__input-check:checked + & {
+    background-color: $accent-color;
   }
 }
 

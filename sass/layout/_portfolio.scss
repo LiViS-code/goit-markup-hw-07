@@ -14,8 +14,8 @@
 
 // список проектов
 .cards-list__project {
-  margin-right: calc(-1 * #{gap});
-  margin-bottom: calc(-1 * #{gap});
+  margin-right: calc(-1 * #{$gap});
+  margin-bottom: calc(-1 * #{$gap});
   background-color: $background-prime-color;
 }
 
