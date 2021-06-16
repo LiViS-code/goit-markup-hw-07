@@ -252,7 +252,7 @@ body {
   background-color: #2196f3;
 }
 
-.btn__accent__accent:hover, .btn__accent__accent:focus {
+.btn__accent:hover, .btn__accent:focus {
   outline: auto;
   outline-color: #2196f3;
   background: #188ce8;
