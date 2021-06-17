@@ -225,6 +225,10 @@ body {
   color: #afb1b8;
 }
 
+.social-link__footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .btn {
   font-family: "Roboto", sans-serif;
   outline: none;
@@ -613,9 +617,12 @@ body {
   margin-right: 70px;
 }
 
-/* адресный блок*/
 .address {
   font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address__link {
@@ -627,32 +634,17 @@ body {
   color: #ffffff;
 }
 
-/* отступы между элементами списка в адресном блоке*/
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .social-box {
   margin-right: 93px;
 }
 
-/* заголовок списка соц. сетей */
 .text-appeal {
+  display: block;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.143;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-/* соц.ссылка в футере */
-.social-link__footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* иконка соц.сети в футере */
-.social-list__footer-icon {
-  fill: currentColor;
 }
 
 .hero-box {
