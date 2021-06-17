@@ -919,16 +919,6 @@ body {
   border-radius: 4px;
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
-          transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
-}
-
 .modal__btn-close {
   position: absolute;
   top: 8px;
@@ -963,5 +953,15 @@ body {
   font-weight: var(--font-weight-bold);
   font-size: 20px;
   line-height: 1.15;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
+          transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
 }
 /*# sourceMappingURL=main.css.map */
