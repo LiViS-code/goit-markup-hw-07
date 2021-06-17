@@ -478,8 +478,13 @@ body {
   border-color: #2196f3;
 }
 
+.form-order__input-check:focus + .icon-check {
+  outline: auto;
+}
+
 .form-order__input-check:checked + .icon-check {
   background-color: #2196f3;
+  outline: none;
 }
 
 /* header */

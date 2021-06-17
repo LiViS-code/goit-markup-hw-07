@@ -98,8 +98,14 @@
   .form-order__input-check:focus + & {
     border-color: $accent-color;
   }
+
+  .form-order__input-check:focus + & {
+    outline: auto;
+  }
+
   // состояние checked
   .form-order__input-check:checked + & {
     background-color: $accent-color;
+    outline: none;
   }
 }
