@@ -15,9 +15,9 @@
     margin-right: 10px;
     fill: currentColor;
   }
-}
 
-// расстояние между ссылками в шапке
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
+  // расстояние между ссылками в шапке
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }

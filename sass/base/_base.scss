@@ -12,6 +12,12 @@
   }
 }
 
+// ссылка на договор
+.link__contract {
+  text-decoration: underline;
+  color: $accent-color;
+}
+
 // заголовки
 .title {
   margin-top: 0;
