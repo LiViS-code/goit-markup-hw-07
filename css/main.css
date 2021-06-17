@@ -957,6 +957,7 @@ body {
 }
 
 .modal__appeal {
+  display: block;
   margin-bottom: 12px;
   text-align: center;
   font-weight: var(--font-weight-bold);
