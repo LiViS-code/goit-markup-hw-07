@@ -53,17 +53,13 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link:hover, .link:focus {
+  color: #2196f3;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-.section__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
 }
 
 .text {
@@ -86,11 +82,6 @@
 
 .cards-list__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.link:hover,
-.link:focus {
-  color: #2196f3;
 }
 
 label,
@@ -130,6 +121,14 @@ body {
 
 .section__team {
   background-color: #f5f4fa;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
 .container {

@@ -25,4 +25,13 @@
   &__team {
     background-color: $backgrount-third-color;
   }
+
+  // заголовок секции
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: $font-weight-bold;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
