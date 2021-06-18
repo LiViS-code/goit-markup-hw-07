@@ -532,6 +532,7 @@
               class="form-order__input"
               type="text"
               name="name"
+              required
               autofocus
             />
             <svg class="form-order__icon" width="18" height="18">
@@ -541,7 +542,7 @@
 
           <label class="form-order__label"
             >Телефон
-            <input class="form-order__input" type="tel" name="phone" />
+            <input class="form-order__input" type="tel" name="phone" required />
             <svg class="form-order__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -549,7 +550,12 @@
 
           <label class="form-order__label"
             >Почта
-            <input class="form-order__input" type="email" name="email" />
+            <input
+              class="form-order__input"
+              type="email"
+              name="email"
+              required
+            />
             <svg class="form-order__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
